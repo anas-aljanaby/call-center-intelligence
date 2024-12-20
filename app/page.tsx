@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Card } from "@/components/Card"
 import { Settings, RefreshCw, AlertTriangle, Target, TrendingUp, ShieldPlus, Headphones, UserSquare, FileCheck } from "lucide-react"
+import { DemoForm } from "@/components/DemoForm";
 
 export default function Home() {
   return (
@@ -53,6 +54,7 @@ export default function Home() {
           />
         </div>
       </section>
+
       <section className="py-16">
         <Card
           tag="CONTACT CENTER SUCCESS"
@@ -145,7 +147,46 @@ export default function Home() {
             }
           ]}
         />
+      </section>      <section className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+          <div>
+            <p className="text-sm font-bold uppercase tracking-wider mb-4">
+              OBSERVE.AI DEMO
+            </p>
+            <h2 className="text-4xl md:text-5xl font-serif mb-6">
+              Experience Observe.AI in <span className="italic">action</span>
+            </h2>
+            <p className="text-lg text-gray-600 mb-8">
+              Enjoy a personalized demo, get answers to your questions, and learn why
+              our AI-powered conversation intelligence platform is the right choice for your
+              contact center.
+            </p>
+            
+            <p className="text-lg mb-6">Imagine your contact center's impact if you could:</p>
+            
+            <ul className="space-y-4 mb-8">
+              {[
+                "Analyze every agent-customer interaction",
+                "Surface insights that drive customer experience, revenue, and cost savings",
+                "Provide real-time AI guidance to frontline agents",
+                "Leverage generative AI to enhance agent performance"
+              ].map((item, index) => (
+                <li key={index} className="flex items-center gap-3">
+                  <span className="text-violet-600">✓</span>
+                  {item}
+                </li>
+              ))}
+            </ul>
+            
+            <p className="text-lg">
+              At Observe.AI, we're dedicated to making this vision a reality for you.
+            </p>
+          </div>
+          
+          <DemoForm />
+        </div>
       </section>
+
     </div>
   );
 }

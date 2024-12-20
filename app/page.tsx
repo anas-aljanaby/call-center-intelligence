@@ -162,7 +162,7 @@ export default function Home() {
               contact center.
             </p>
             
-            <p className="text-lg mb-6">Imagine your contact center's impact if you could:</p>
+            <p className="text-lg mb-6">Imagine your contact centers impact if you could:</p>
             
             <ul className="space-y-4 mb-8">
               {[
@@ -179,7 +179,7 @@ export default function Home() {
             </ul>
             
             <p className="text-lg">
-              At Observe.AI, we're dedicated to making this vision a reality for you.
+              At Observe.AI, we&apos;re dedicated to making this vision a reality for you.
             </p>
           </div>
           
